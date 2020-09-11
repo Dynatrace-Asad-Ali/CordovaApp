@@ -1,0 +1,38 @@
+<html><head><script src="assets/dtAgent.js" type="text/javascript" data-dtconfig="app=b10b4eca842c6d9c|auto=1|cors=1|featureHash=ICA27SVafgqrux|vcv=2|reportUrl=https://scu37051.live.dynatrace.com/bf|rdnt=1|uxrgce=1|bp=2|cuc=iil5fb5h|dpvc=1|instr=clk|lastModification=1599845167742|dtVersion=10199200831173248|tp=500,50,0,1|uxdcw=1500|vs=2|featureHash=ICA27SVafgqrux|dtVersion=10199200831173248|auto=1|agentUri=https://js-cdn.dynatrace.com/jstag/15c157a40ab/ruxitagent_ICA27SVafgqrux_10199200831173248.js"></script>
+    <title>Dynatrace JavaScript API</title>
+    <link href="global.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="..\global.js"></script>
+    <script src="xhr.js"></script>
+    <script type="text/javascript">
+        function loadData() {
+            console.log('Ending the session')
+           dtrum.endSession();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="explanation">
+        <h2>End User Session </h2>
+        <div class="field">
+            <div class="fieldHeader"> Agentconfig</div>
+            Needed agent module configuration: <div class="agentConf">no extra modules<div class="agentConfCheck"></div>
+            </div>
+        </div>
+        <p>This example demonstrates how to end a user session</p>
+    </div>
+    <div class="field">
+        <div class="fieldHeader"> Code snippet</div>
+        <code-block>
+            dtrum.endSession()
+        </code-block>
+    </div>
+    <div class="field example">
+        <div class="fieldHeader"> Example</div>
+
+        <button onclick="loadData()">End Session</button>
+    </div>
+    <a class="backButton" href="index.html"> ⬅ Back</a>
+
+
+</body></html>
